@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>თექვსმეტობითი კალკულატორი</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .textdesign
+            {
+                height:35px;
+            }
+            .bdesign
+            {
+                height:30px;
+                width:60px;
+            }
+            .button:hover 
+            {
+                background-color: skyblue;
+                color: white;
+            }
+            .buttonclear
+            {
+                width: 127px;
+                height:30px;
+            }
+            .buttonclear:hover
+            {
+                background-color: lightsalmon;
+                color: white;
+            }
+            .signbutton:hover 
+            {
+                background-color: darkseagreen;
+                color: white;
+            }
+            .equalbutton:hover 
+            {
+                background-color: red;
+                color: white;
+            }
+            .header_cal
+            {
+                width: 327px;
+                height: 50px;
+                background-color: lightcoral;
+                color: white;
+            }
+        </style>
+        <script type='text/javascript' src='equalResponse.js'></script>
+        <script>
+            var input_tape="";
+            function f()
+            {
+                var buttons = document.getElementsByTagName("button");
+                var buttonsCount = buttons.length;
+                
+                for (var i = 0; i <= buttonsCount; i += 1) 
+                {
+                    buttons[i].onclick = function(e) 
+                    {
+                        if(this.id==='id1')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'1';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id2')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'2';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id3')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'3';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id4')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'4';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id5')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'5';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id6')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'6';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id7')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'7';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id8')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'8';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id9')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'9';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='id0')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'0';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idF')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'F';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idA')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'A';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idB')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'B';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idC')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'C';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idD')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'D';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idE')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'E';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idp')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'+';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='ids')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'-';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idm')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'*';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idd')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp+'/';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idcl')
+                        {
+                            var temp=document.getElementById("input_tape").value;
+                            input_tape=temp.slice(0,temp.length-1);
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idac')
+                        {
+                            input_tape='';
+                            document.getElementById("input_tape").value=input_tape;
+                        }
+                        else if(this.id==='idequal')
+                        {
+                            if(document.getElementById("input_tape").value.includes(' = ')){}
+                            else
+                            {
+                                var input_tape_temp=document.getElementById("input_tape").value;
+                                getInputTape(input_tape_temp);
+                            }
+                        }
+                    };
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+    <center>
+        <table border="1">
+            <tr>
+                <td colspan = "5">
+                    <button class="header_cal">თექვსმეტობითი კალკულატორი</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "5">
+                    <input type='text' class="textdesign" id='input_tape' placeholder='0' size='42'>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="bdesign button" id='id1' onclick="f()">1</button></td>
+                <td><button class="bdesign button" id='id2' onclick="f()">2</button></td>
+                <td><button class="bdesign button" id='id3' onclick="f()">3</button></td>
+                <td><button class="bdesign button" id='id4' onclick="f()">4</button></td>
+                <td><button class="bdesign signbutton" id='idp' onclick="f()">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="bdesign button" id='id5' onclick="f()">5</button></td>
+                <td><button class="bdesign button" id='id6' onclick="f()">6</button></td>
+                <td><button class="bdesign button" id='id7' onclick="f()">7</button></td>
+                <td><button class="bdesign button" id='id8' onclick="f()">8</button></td>
+                <td><button class="bdesign signbutton" id='ids' onclick="f()">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="bdesign button" id='id9' onclick="f()">9</button></td>
+                <td><button class="bdesign button" id='id0' onclick="f()">0</button></td>
+                <td><button class="bdesign button" id='idA' onclick="f()">A</button></td>
+                <td><button class="bdesign button" id='idB' onclick="f()">B</button></td>
+                <td><button class="bdesign signbutton" id='idm' onclick="f()">*</button></td>
+            </tr>
+            <tr>
+               <td><button class="bdesign button" id='idC' onclick="f()">C</button></td>
+               <td><button class="bdesign button" id='idD' onclick="f()">D</button></td>
+               <td><button class="bdesign button" id='idE' onclick="f()">E</button></td>
+               <td><button class="bdesign button" id='idF' onclick="f()">F</button></td>
+               <td><button class="bdesign signbutton" id='idd' onclick="f()">/</button></td>
+            </tr>
+            <tr>
+               <td><button class="bdesign equalbutton" id='idequal' onclick="f()">=</button></td>
+               <td colspan="2"><button class="buttonclear" id='idcl' onclick="f()">წაშლა</button></td>
+               <td colspan="2"><button class="buttonclear" id='idac' onclick="f()">გასუფთავება</button></td>
+            </tr>
+        </table>
+        </center>
+    </body>
+</html>
